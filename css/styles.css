@@ -1,0 +1,127 @@
+/* main color of font #212121
+color of font on selection #2196F3
+color of links and text in parag #757575
+hero and buttons font color #FFFFFF
+color of link and phone in footer rgba(255, 255, 255, 0.6)
+main backgroung #F5F5F5
+hero and footer background #2F303A
+our team background #F5F4FA
+button background #2196F3
+portfolio radio buttons background #F5F4FA */
+
+:root {
+  --main-text-color: #212121;
+  --main-background-color: #f5f5f5;
+  --acent-color: #2196f3;
+  --radio-button-background: #f5f4fa;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Sections */
+
+.section-title {
+  color: #212121;
+}
+
+.section-team {
+  background-color: #f5f4fa;
+}
+
+/*Logo */
+.logo {
+  color: #000000;
+}
+
+/* Site navigation */
+.site-nav .link {
+  color: var(--main-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent-color);
+}
+
+.site-nav .link.current {
+  color: var(--acent-color);
+}
+
+/* Hero */
+.section-hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+/*E-mails and phone numbers */
+
+.e-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+.e-mail:hover,
+.e-mail:focus {
+  color: var(--acent-color);
+}
+
+.phone-number {
+  color: rgba(255, 255, 255, 0.6);
+}
+.phone-number:hover,
+.phone-number:focus {
+  color: var(--acent-color);
+}
+
+.header .phone-number {
+  color: #757575;
+}
+.header .phone-number:hover,
+.header .phone-number:focus {
+  color: var(--acent-color);
+}
+
+.header .e-mail {
+  color: #757575;
+}
+.header .e-mail:hover,
+.header .e-mail:focus {
+  color: var(--acent-color);
+}
+
+/* Buttons */
+.radio-button {
+  background-color: var(--radio-button-background);
+  border-color: var(--radio-button-background);
+}
+.radio-button:hover,
+.radio-button:focus {
+  background-color: var(--acent-color);
+  border-color: var(--acent-color);
+}
+.order-button {
+  background-color: var(--acent-color);
+  color: #ffffff;
+  border-color: var(--acent-color);
+}
+
+/*Footer*/
+
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  color: #ffffff;
+}
+.address:hover,
+.address:focus {
+  color: var(--acent-color);
+}
