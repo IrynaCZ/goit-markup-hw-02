@@ -1,17 +1,9 @@
-/* main color of font #212121
-color of font on selection #2196F3
-color of links and text in parag #757575
-hero and buttons font color #FFFFFF
-color of link and phone in footer rgba(255, 255, 255, 0.6)
-main backgroung #F5F5F5
-hero and footer background #2F303A
-our team background #F5F4FA
-button background #2196F3
-portfolio radio buttons background #F5F4FA */
-
 :root {
   --main-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #ffffff;
   --main-background-color: #f5f5f5;
+  --secondary-bg-color: #2f303a;
   --acent-color: #2196f3;
   --radio-button-background: #f5f4fa;
 }
@@ -19,6 +11,9 @@ portfolio radio buttons background #F5F4FA */
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
+  font-family: Roboto, serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -28,21 +23,65 @@ body {
 /* Sections */
 
 .section-title {
-  color: #212121;
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.header-activities {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.text-activities {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
 }
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--main-background-color);
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.member-job {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--second-text-color);
 }
 
 /*Logo */
 .logo {
   color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--acent-color);
 }
 
 /* Site navigation */
 .site-nav .link {
   color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -54,19 +93,15 @@ body {
   color: var(--acent-color);
 }
 
-/* Hero */
-.section-hero {
-  background-color: #2f303a;
-}
-
-.hero-title {
-  color: #ffffff;
-}
-
 /*E-mails and phone numbers */
 
 .e-mail {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .e-mail:hover,
 .e-mail:focus {
@@ -74,15 +109,27 @@ body {
 }
 
 .phone-number {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
+
 .phone-number:hover,
 .phone-number:focus {
   color: var(--acent-color);
 }
 
 .header .phone-number {
-  color: #757575;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  text-decoration: none;
 }
 .header .phone-number:hover,
 .header .phone-number:focus {
@@ -90,7 +137,13 @@ body {
 }
 
 .header .e-mail {
-  color: #757575;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  text-decoration: none;
 }
 .header .e-mail:hover,
 .header .e-mail:focus {
@@ -99,8 +152,13 @@ body {
 
 /* Buttons */
 .radio-button {
+  font-family: inherit;
   background-color: var(--radio-button-background);
   border-color: var(--radio-button-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
 }
 .radio-button:hover,
 .radio-button:focus {
@@ -108,20 +166,63 @@ body {
   border-color: var(--acent-color);
 }
 .order-button {
+  font-family: inherit;
   background-color: var(--acent-color);
-  color: #ffffff;
+  color: var(--third-text-color);
   border-color: var(--acent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /*Footer*/
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-bg-color);
 }
+
+.footer .logo {
+  color: var(--third-text-color);
+}
+
 .address {
-  color: #ffffff;
+  color: var(--third-text-color);
+  text-decoration: none;
 }
 .address:hover,
 .address:focus {
   color: var(--acent-color);
+}
+
+/* Hero */
+.section-hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+  color: var(--third-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Portfolio styles */
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--second-text-color);
 }
